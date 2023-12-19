@@ -1,0 +1,2000 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Nopcommerce Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Dec 19, 2023 08:17:18 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Dec 19, 2023 08:17:18 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Dec 19, 2023 08:17:19 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>2</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='22%'><b>2</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='77%'><b>7</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='37%'><b>50</b> steps passed</small></div>
+<div>
+<small data-tooltip='5%'><b>7</b> steps failed,
+<b>75</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Laptops and Notebook page test cases":0.061,"Desktop page test cases":0.113
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@sanity</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@author-Anany</td>
+<td>2</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>22.222%</td>
+</tr>
+<tr>
+<td>@smoke</td>
+<td>2</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>22.222%</td>
+</tr>
+<tr>
+<td>@regression</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Engineer</td>
+<td>Jay Vaghani</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>Nop commerce</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 2,
+failChild: 7,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 50,
+failGrandChild: 7,
+warningGrandChild: 0,
+skipGrandChild: 75,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@sanity</a><a class="dropdown-item" href="#">@author-Anany</a><a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@regression</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Laptops and Notebook page test cases</p>
+            <p class="text-sm">
+              <span>08:17:19</span> / <span>00:00:00:061</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Laptops and Notebook page test cases</h5>
+<span class='badge badge-success'>12.19.2023 08:17:19</span>
+<span class='badge badge-danger'>12.19.2023 08:17:19</span>
+<span class='badge badge-default'>00:00:00:061</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify that products price display High To Low successfully</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.steps.DesktopsSteps.iAmOnTheHomepage()">
+                <span>Given I am on the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iHoverOnLaptopsNotebooksTabAndClick()">
+                <span>And I hover on Laptops & Notebooks Tab and click</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iClickOnShowAllLaptopsNotebooks()">
+                <span>And I click on “Show All Laptops & Notebooks”</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iSelectSortBy(java.lang.String)">
+                <span>And I select Sort By "Price (High > Low)"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iCanSeeTheProductPriceWillArrangeInHighToLowOrder()">
+                <span>Then I can see the Product price will arrange in High to Low order.</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log fail-bg mr-2">Fail</span>Verify that user place order successfully</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.steps.DesktopsSteps.iAmOnTheHomepage()">
+                <span>Given I am on the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iHoverOnLaptopsNotebooksTabAndClick()">
+                <span>And I hover on Laptops & Notebooks Tab and click</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iClickOnShowAllLaptopsNotebooks()">
+                <span>And I click on “Show All Laptops & Notebooks”</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iSelectSortBy(java.lang.String)">
+                <span>And I select Sort By "Price (High > Low)"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iSelectProductMacBook()">
+                <span>And I select Product 'MacBook'</span>
+      <div>
+        <textarea disabled class="code-block">io.cucumber.core.exception.CucumberException: Step [I select Product {string}] is defined with 0 parameters at 'com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iSelectProductMacBook()'.
+However, the gherkin step has 1 arguments:
+ * 'MacBook'
+Step text: I select Product 'MacBook'
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.DesktopsSteps.iCanSeeTheText(java.lang.String)">
+                <span>Then I can see the text 'MacBook'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iClickOnAddToCartButton()">
+                <span>And I click on ‘Add To Cart’ button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iCanSeeTheMessageSuccessYouHaveAddedMacBookToYourShoppingCart()">
+                <span>Then I can see the message 'Success: You have added MacBook to your shopping cart!'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iClickOnLinkShoppingCartDisplayedIntoSuccessMessage()">
+                <span>And I click on link 'shopping cart' displayed into success message</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iCanAbleToSeeTheText(java.lang.String)">
+                <span>Then I can able to see the text "Shopping Cart"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iCanAbleToSeeTheProductName(java.lang.String)">
+                <span>Then I can able to see the Product name "MacBook"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iChangeQuantityTo(int)">
+                <span>And I change Quantity to 2</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iClickOnUpdateTab()">
+                <span>And I click on 'Update' Tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iCanSeeTheMessageSuccessYouHaveAddedMacBookToYourShoppingCart()">
+                <span>Then I can see the message 'Success: You have modified your shopping cart!'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iCanSeeTheTotal£(int,int)">
+                <span>Then I can see the Total £737.45</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iClickOnCheckoutButton()">
+                <span>And I click on 'Checkout' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.DesktopsSteps.iCanSeeTheText(java.lang.String)">
+                <span>Then I can see the text 'Checkout'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iCanSeeTheTextNewCustomer()">
+                <span>Then I can see the Text 'New Customer'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iClickOnGuestCheckoutRadioButton()">
+                <span>And I click on 'Guest Checkout' radio button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iClickOnContinueTab()">
+                <span>And I click on 'Continue' tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iFillTheMandatoryFields()">
+                <span>And I fill the mandatory fields</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iClickOnContinueButton()">
+                <span>And I click on 'Continue' Button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iAddCommentsAboutYourOrderIntoTextArea()">
+                <span>And I add Comments About your order into text area</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iCheckTheTermsConditionsCheckBox()">
+                <span>And I check the Terms & Conditions check box</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iClickOnCheckoutButton()">
+                <span>And I click on 'Continue' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopsAndNoteBooksTest.iCanSeeTheMessageSuccessYouHaveAddedMacBookToYourShoppingCart()">
+                <span>Then I can see the message 'Warning: Payment method required!'</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="35"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Desktop page test cases</p>
+            <p class="text-sm">
+              <span>08:17:19</span> / <span>00:00:00:113</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Desktop page test cases</h5>
+<span class='badge badge-success'>12.19.2023 08:17:19</span>
+<span class='badge badge-danger'>12.19.2023 08:17:19</span>
+<span class='badge badge-default'>00:00:00:113</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="36"><span class="badge log pass-bg mr-2">Pass</span>verify product arranged in alphabetical order</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.steps.DesktopsSteps.iAmOnTheHomepage()">
+                <span>Given I am on the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.DesktopsSteps.iHoverOnTheDesktopsTabAndClick()">
+                <span>And I hover on the Desktops tab and click</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.DesktopsSteps.clickOn(java.lang.String)">
+                <span>And click on "Show AllDesktops"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.DesktopsSteps.selectSortByPosition(java.lang.String)">
+                <span>And select sort by position "Name: Z to A"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.DesktopsSteps.iCanSeeTheProductsInDescendingOrder()">
+                <span>Then I can see the products in descending order</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="42"><span class="badge log fail-bg mr-2">Fail</span>verify product arranged in alphabetical order</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="43"><span class="badge log fail-bg mr-2">Fail</span>verify product arranged in alphabetical order</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I hover on the Desktops tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click on "Show AllDesktops"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And select sort by the position "Name: A to Z"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify the Text "HTC"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I can see the text "HP LP3065"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And select delivery date '2023-11-30'</span>
+      <div>
+        <textarea disabled class="code-block">io.cucumber.core.exception.CucumberException: Step [select delivery date {string}] is defined with 3 parameters at 'com.tutorialsninja.steps.DesktopsSteps.selectDeliveryDate(int,int,int)'.
+However, the gherkin step has 1 arguments:
+ * '2023-11-30'
+Step text: select delivery date '2023-11-30'
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And enter qty 1 using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And click on 'Add to Cart' button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text "Success: You have added HP LP3065 to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link 'shopping cart' display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'Shopping Cart'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Product name "HP LP3065"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Delivery Date "2022-11-30"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the 'Touch HD'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the 'Product 1 £74.73'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="60"><span class="badge log fail-bg mr-2">Fail</span>verify product arranged in alphabetical order</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I hover on the Desktops tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click on "Show AllDesktops"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And select sort by the position "Name: A to Z"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify the Text "iPhone"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I can see the text "HP LP3065"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And select delivery date '2023-11-30'</span>
+      <div>
+        <textarea disabled class="code-block">io.cucumber.core.exception.CucumberException: Step [select delivery date {string}] is defined with 3 parameters at 'com.tutorialsninja.steps.DesktopsSteps.selectDeliveryDate(int,int,int)'.
+However, the gherkin step has 1 arguments:
+ * '2023-11-30'
+Step text: select delivery date '2023-11-30'
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And enter qty 1 using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And click on 'Add to Cart' button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text "Success: You have added HP LP3065 to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link 'shopping cart' display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'Shopping Cart'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Product name "HP LP3065"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Delivery Date "2022-11-30"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the 'product 11'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the '£75.46'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="77"><span class="badge log fail-bg mr-2">Fail</span>verify product arranged in alphabetical order</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I hover on the Desktops tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click on "Show AllDesktops"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And select sort by the position "Name: A to Z"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify the Text "iPod Classic"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I can see the text "HP LP3065"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And select delivery date '2023-11-30'</span>
+      <div>
+        <textarea disabled class="code-block">io.cucumber.core.exception.CucumberException: Step [select delivery date {string}] is defined with 3 parameters at 'com.tutorialsninja.steps.DesktopsSteps.selectDeliveryDate(int,int,int)'.
+However, the gherkin step has 1 arguments:
+ * '2023-11-30'
+Step text: select delivery date '2023-11-30'
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And enter qty 1 using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And click on 'Add to Cart' button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text "Success: You have added HP LP3065 to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link 'shopping cart' display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'Shopping Cart'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Product name "HP LP3065"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Delivery Date "2022-11-30"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the 'product 20'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the '£74.73'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="94"><span class="badge log fail-bg mr-2">Fail</span>verify product arranged in alphabetical order</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I hover on the Desktops tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click on "Show AllDesktops"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And select sort by the position "Name: A to Z"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify the Text "MacBook"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I can see the text "HP LP3065"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And select delivery date '2023-11-30'</span>
+      <div>
+        <textarea disabled class="code-block">io.cucumber.core.exception.CucumberException: Step [select delivery date {string}] is defined with 3 parameters at 'com.tutorialsninja.steps.DesktopsSteps.selectDeliveryDate(int,int,int)'.
+However, the gherkin step has 1 arguments:
+ * '2023-11-30'
+Step text: select delivery date '2023-11-30'
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And enter qty 1 using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And click on 'Add to Cart' button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text "Success: You have added HP LP3065 to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link 'shopping cart' display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'Shopping Cart'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Product name "HP LP3065"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Delivery Date "2022-11-30"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the 'Product 16'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the '£368.73'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="111"><span class="badge log fail-bg mr-2">Fail</span>verify product arranged in alphabetical order</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I hover on the Desktops tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click on "Show AllDesktops"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And select sort by the position "Name: A to Z"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify the Text "MacBook Air"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I can see the text "HP LP3065"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And select delivery date '2023-11-30'</span>
+      <div>
+        <textarea disabled class="code-block">io.cucumber.core.exception.CucumberException: Step [select delivery date {string}] is defined with 3 parameters at 'com.tutorialsninja.steps.DesktopsSteps.selectDeliveryDate(int,int,int)'.
+However, the gherkin step has 1 arguments:
+ * '2023-11-30'
+Step text: select delivery date '2023-11-30'
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And enter qty 1 using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And click on 'Add to Cart' button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text "Success: You have added HP LP3065 to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link 'shopping cart' display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'Shopping Cart'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Product name "HP LP3065"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Delivery Date "2022-11-30"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the 'Product 17'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the '£736.23'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="128"><span class="badge log fail-bg mr-2">Fail</span>verify product arranged in alphabetical order</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I hover on the Desktops tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click on "Show AllDesktops"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And select sort by the position "Name: A to Z"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify the Text "Sony VAIO"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I can see the text "HP LP3065"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And select delivery date '2023-11-30'</span>
+      <div>
+        <textarea disabled class="code-block">io.cucumber.core.exception.CucumberException: Step [select delivery date {string}] is defined with 3 parameters at 'com.tutorialsninja.steps.DesktopsSteps.selectDeliveryDate(int,int,int)'.
+However, the gherkin step has 1 arguments:
+ * '2023-11-30'
+Step text: select delivery date '2023-11-30'
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And enter qty 1 using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And click on 'Add to Cart' button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text "Success: You have added HP LP3065 to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link 'shopping cart' display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'Shopping Cart'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Product name "HP LP3065"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Delivery Date "2022-11-30"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the 'Product 19'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the '£736.23'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>7</span>
+</span>
+<p class="name">@sanity</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@sanity</h4>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Verify that user place order successfully</a>
+<div class="">
+<span class="badge badge-default">Laptops and Notebook page test cases.Verify that user place order successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='43'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='60'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='77'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='94'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='111'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='128'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>7</span>
+</span>
+<p class="name">@author-Anany</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@author-Anany</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Verify that products price display High To Low successfully</a>
+<div class="">
+<span class="badge badge-default">Laptops and Notebook page test cases.Verify that products price display High To Low successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Verify that user place order successfully</a>
+<div class="">
+<span class="badge badge-default">Laptops and Notebook page test cases.Verify that user place order successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='36'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='43'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='60'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='77'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='94'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='111'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='128'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>7</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Verify that products price display High To Low successfully</a>
+<div class="">
+<span class="badge badge-default">Laptops and Notebook page test cases.Verify that products price display High To Low successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Verify that user place order successfully</a>
+<div class="">
+<span class="badge badge-default">Laptops and Notebook page test cases.Verify that user place order successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='36'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='43'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='60'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='77'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='94'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='111'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='128'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>7</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Verify that user place order successfully</a>
+<div class="">
+<span class="badge badge-default">Laptops and Notebook page test cases.Verify that user place order successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='43'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='60'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='77'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='94'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='111'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='128'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>7</span>
+</span>
+<p class="name">io.cucumber.core.exception.CucumberException</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>io.cucumber.core.exception.CucumberException</h4>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>And I select Product 'MacBook'</a>
+<div class="">
+<span class="badge badge-default">Laptops and Notebook page test cases.Verify that user place order successfully.And I select Product 'MacBook'</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='50'>And select delivery date '2023-11-30'</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order.And select delivery date '2023-11-30'</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='67'>And select delivery date '2023-11-30'</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order.And select delivery date '2023-11-30'</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='84'>And select delivery date '2023-11-30'</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order.And select delivery date '2023-11-30'</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='101'>And select delivery date '2023-11-30'</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order.And select delivery date '2023-11-30'</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='118'>And select delivery date '2023-11-30'</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order.And select delivery date '2023-11-30'</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:17:19 am</td>
+<td>
+<a href="#" class="linked" test-id='35' id='135'>And select delivery date '2023-11-30'</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order.And select delivery date '2023-11-30'</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
